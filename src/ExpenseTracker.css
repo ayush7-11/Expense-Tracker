@@ -1,0 +1,158 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat;
+}
+body{
+    display: flex;
+    justify-content: center;
+    transition: 0.3s;
+}
+.darkModeBtn{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: transparent;
+    border: none;
+}
+.darkModeBtn img{
+    width: 30px;
+    border: none;
+}
+.dark .darkModeBtn{
+    color: white;
+    filter: brightness(100%);
+}
+.app {
+    position: relative;
+    background-color: white;
+    min-height: 100vh;
+    transition: 0.3s;
+    padding: 0 20px;
+}
+.app.dark {
+    background-color: #121212;
+    color: white;
+}
+header{
+    font-size: 35px;
+    font-weight: 600;
+    padding: 50px;
+}
+.balance{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.balance span{
+    font-size: 20px;
+    font-weight: 600;
+}
+.balance button{
+    padding: 6px 15px;
+    font-weight: 600;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+}
+.dark .balance button{
+    background-color: white;
+    color: black;
+}
+.balance button:hover{
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+}
+.dark .balance button:hover{
+    box-shadow: 5px 5px 10px rgba(255, 253, 253, 0.7);
+}
+.add{
+    width: 100%;
+    padding: 25px;
+    border: 1.5px solid rgb(230, 232, 233);
+    margin-bottom: 30px;
+}
+.dark .add{
+    border: 1.5px solid rgb(98, 98, 98);
+}
+.add input{
+    background-color: white;
+    border: 1.5px solid rgb(230, 232, 233);
+    border-radius: 5px;
+}
+.radio{
+    display: flex;
+    justify-content: start;
+    gap: 10px;
+}
+.radio input{
+    width: 15px;
+    height: 15px;
+}
+.add button{
+    background-color: black;
+    color: white;
+    padding: 8px 10px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 5px;
+    border: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.dark .add button{
+    background-color: white;
+    color: black;
+}
+.amount{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 50px;
+}
+.amount > div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    padding: 20px 20px;
+    border: 1.5px solid rgb(230, 232, 233);
+    border-radius: 5px;
+}
+.dark .amount > div{
+    border: 1.5px solid rgb(98, 98, 98);
+}
+.transactions{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+input{
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    background-color: rgb(230, 232, 233);
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    margin-bottom: 20px;
+}
+.listItem{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    height: 40px;
+    border: 1.5px solid rgb(230, 232, 233);
+}
+.dark .listItem{
+    border: 1.5px solid rgb(98, 98, 98);
+}
